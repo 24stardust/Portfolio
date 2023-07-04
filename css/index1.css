@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "pretendard-Medium";
+    src: url(../font/Pretendard-Medium.otf);
+}
+
+@font-face {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 공통설정 */
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.left {
+    float: left;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+img {
+    vertical-align: top;
+}
+
+/* header */
+.wrap {}
+.wrap .fixed {}
+
+.wrap .fixed .inner {}
+.wrap .fixed .inner h1 {}
+.wrap .fixed .inner h1 a {}
+/* nav */
+.wrap .fixed .inner .menu {}
+.wrap .fixed .inner .menu .depth1 {}
+.wrap .fixed .inner .menu .depth1 li {}
+.wrap .fixed .inner .menu .depth1 li a {}
+.wrap .fixed .inner .menu .depth1 .depth2 {}
+.wrap .fixed .inner .menu .depth1 .depth2 li {}
+.wrap .fixed .inner .menu .depth1 .depth2 li a {}
+
+/* main */
+main {}
+main .inner {}
+/* section1 */
+main .inner .main1 {}
+main .inner .main1 video {}
+
+main .inner .main1 .scroll {}
+main .inner .main1 .scroll img {}
+main .inner .main1 .scroll p {}
+
+main .inner .main1 .slogan {}
+main .inner .main1 .slogan h2 {}
+
+main .inner .main1 .cookies {}
+main .inner .main1 .cookies img {}
+
+main .inner .main1 .maintext {}
+main .inner .main1 .maintext p {}
+
+/* section2 */
+main .inner .latest-news {}
+main .inner .latest-news h3 {}
+/* slide */
+main .inner .latest-news .slide {}
+/* slide1 */
+main .inner .latest-news .slide .slide1 {}
+main .inner .latest-news .slide .slide1 .slide-img {}
+main .inner .latest-news .slide .slide1 .slide-img img {}
+main .inner .latest-news .slide .slide1 h4 {}
+main .inner .latest-news .slide .slide1 .slide1-btn {}
+main .inner .latest-news .slide .slide1 .slide1-btn a {}
+/* slide2 */
+main .inner .latest-news .slide .slide2 {}
+main .inner .latest-news .slide .slide2 .slide-img {}
+main .inner .latest-news .slide .slide2 .slide-img img {}
+main .inner .latest-news .slide .slide2 h4 {}
+main .inner .latest-news .slide .slide2 .slide1-btn {}
+main .inner .latest-news .slide .slide2 .slide1-btn a {}
+/* 12까지 있음. html에서 slide-img slide-btn 확인하기 */
+/* section2 하단 버튼 */
+main .inner .latest-news .btn-read {}
+main .inner .latest-news .btn-read a {}
+/* section3 */
+/* 쿠키런 오븐브레이크 */
+main .inner .ourgames {}
+main .inner .ourgames h3 {}
+main .inner .ourgames .c-oven {}
+main .inner .ourgames .c-oven h4 {}
+main .inner .ourgames .c-oven p {}
+main .inner .ourgames .c-oven .platform {}
+main .inner .ourgames .c-oven .platform img {}
+/* 쿠키런 킹덤 */
+main .inner .ourgames .c-kingdom {}
+main .inner .ourgames .c-kingdom h4 {}
+main .inner .ourgames .c-kingdom p {}
+main .inner .ourgames .c-kingdom .platform {}
+main .inner .ourgames .c-kingdom .platform img {}
+/* 데드사이드 클럽 */
+/* 브릭시티 */
+/* ====구조 한번 더 고민해보고 변경하고 채워넣기 */
+/* section3 하단 버튼 */
+main .inner .ourgames .meet-btn {}
+main .inner .ourgames .meet-btn a {}
+
+/* section4 */
+main .inner .studios {}
+main .inner .studios .ovengames {}
+main .inner .studios .ovengames img {}
+main .inner .studios .ovengames h4 {}
+main .inner .studios .ovengames p {}
+
+.wrap .fixed{
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    background-color: #FF8200;
+    z-index: 9;
+    /* overflow: hidden; */
+}
+.wrap .fixed .inner {
+    width: 1120px;
+    margin: 0 auto;
+}
+.wrap .fixed .inner h1 {
+    width: 120px;
+    height: 100%;
+    float: left;
+}
+.wrap .fixed .inner h1 a img {
+    width: 120px;
+    height: 16px;
+    margin-top: 16px;
+}
+
+/* nav */
+
+.menu .depth1 > li > a {
+    line-height: 48px;
+    width: 120px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+}
+
+.menu .depth1 .depth2 {
+    font-family: 'pretendard-Medium';
+    font-size: 12px;
+    padding-top: 10px;
+}
+.menu .depth1 .depth2 li {
+    width: 120px;
+    text-align: center;
+}
+.menu .depth1 .depth2 li a {
+    display: block;
+    width: 120px;
+    height: 22px;
+    text-align: center;
+}
+
+.cookies img {
+    width: 500px;
+}
